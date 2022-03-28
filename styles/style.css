@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    /* margin: 0 auto; */
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.header_visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.content__wrapper {
+    margin: 20px 40px;
+    text-align: center;
+}
