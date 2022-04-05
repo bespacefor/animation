@@ -1,6 +1,5 @@
 * {
     padding: 0;
-    /* margin: 0 auto; */
     box-sizing: border-box;
 }
 
@@ -17,6 +16,180 @@ body {
 }
 
 .content__wrapper {
-    margin: 20px 40px;
+    margin: 0 auto;
     text-align: center;
+    max-width: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.box {
+    border: 3px dotted gray;
+    padding: 10px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+
+/* TASK 2 */
+.square_animated2 {
+    animation: a2 4s infinite;
+}
+
+@keyframes a2 {
+    0% {
+        margin-left: 20%;
+    }
+
+    100% {
+        margin-left: 80%;
+    }
+}
+
+/* TASK 3 */
+.big-square {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+}
+
+.big-square_animated3 {
+    animation: a3 4s 30 0s;
+}
+
+@keyframes a3 {
+    0% {
+        background: white;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+/* TASK 4 */
+.box_fourth {
+    height: 300px;
+    position: relative;
+}
+
+.square_animated4 {
+    animation: a4 8s linear 30;
+    position: absolute;
+}
+
+@keyframes a4 {
+    0% {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    25% {
+        margin-left: 20%;
+        margin-top: 0%;
+    }
+
+    50% {
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+
+    75% {
+        margin-left: 0%;
+        margin-top: 20%;
+    }
+
+    100% {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+}
+
+/* TASK 6 */
+.square_animated6 {
+    animation: a6 4s infinite;
+}
+
+@keyframes a6 {
+    0% {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+/* TASK 9 */
+.wrap {
+    margin: 0px auto;
+    width: 50%;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.rectangle_animated9 {
+    background-color: green;
+	width: 0%;
+	height: 100%;
+	
+	-webkit-animation: a9 16s linear infinite -8s;
+	animation: a9 16s linear infinite -8s;
+}
+
+@keyframes a9 {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* TASK 11 */
+.hoverme {
+    padding: 10px;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.block {
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.block_animated11 {
+    width: 50px;
+    animation: a11 2s ease alternate infinite;
+    animation-play-state: paused;
+}
+
+.hoverme:hover + .block_animated11 {
+	animation-play-state: running;
+}
+
+@keyframes a11 {
+    0% {
+        width: 10%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
